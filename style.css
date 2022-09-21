@@ -1,0 +1,311 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  min-height: 1400px;
+  margin: 50px;
+  background-color: #d6d6d6;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+}
+
+.container .left-side {
+  position: relative;
+  background-color: #202020;
+  padding: 40px;
+}
+
+.profilText {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #ffe06c;
+}
+
+.imgBx {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profilText .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profilText h2 {
+  color: white;
+  font-size: 1.5em;
+  margin-top: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.4em;
+}
+
+.profilText h2 span {
+  font-size: 0.7em;
+  font-weight: 400;
+  line-height: 1.2em;
+  text-transform: none;
+  color: #707070;
+}
+
+/* Contact =====================================================
+ */
+
+.contentInfo {
+  padding-top: 40px;
+}
+
+.title {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.contentInfo ul {
+  position: relative;
+}
+.contentInfo ul li {
+  position: relative;
+  list-style: none;
+  margin: 10px 0;
+  display: flex;
+}
+
+.contentInfo ul li .icon {
+  display: inline-block;
+  width: 30px;
+  font-size: 18px;
+  color: #ffe06c;
+}
+
+.contentInfo ul li .text {
+  color: #ececec;
+  font-weight: 300;
+  letter-spacing: 0.01em;
+}
+
+/* Akhir Kontak -----==========================================
+ */
+
+/* EDUCATION =================================================
+*/
+
+.contentInfo.education li {
+  flex-direction: column;
+}
+h5 {
+  color: #ffe06c;
+  font-weight: 300;
+  letter-spacing: 0.01em;
+}
+h4 {
+  color: #ffffff;
+  font-weight: 500;
+  margin: 5px 0;
+}
+
+h6 {
+  color: #707070;
+  font-weight: 500;
+  font-size: 0.8em;
+}
+
+span.education {
+  color: #707070;
+  font-size: 0.7em;
+  font-weight: 300;
+}
+
+/* Akhir Education */
+
+/* Akhir Kiri */
+
+.container .right-side {
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  padding: 40px;
+}
+
+.about {
+  margin-bottom: 50px;
+}
+
+.about:last-child {
+  margin-bottom: 0;
+}
+
+.title2 {
+  color: #202020;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+p {
+  color: #3f3f3f;
+  font-size: 0.9em;
+}
+
+.about .box {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0;
+}
+
+.about .box .year-company {
+  width: 30%;
+  padding-right: 10px;
+}
+.about .box .year-company .year {
+  font-weight: 400;
+  text-transform: none;
+  max-width: 150px;
+}
+
+.about .box .experience-text {
+  width: 70%;
+  padding-left: 10px;
+}
+
+.about .box .year-company h5 {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #202020;
+  font-size: 1em;
+}
+.about .box .year-company span {
+  font-size: 0.8em;
+}
+
+.about .box .experience-text h4 {
+  color: #202020;
+  font-weight: 600;
+  font-size: 0.9em;
+}
+
+.about .title2 .box-skill {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  background-color: #202020;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+.about-interest {
+}
+
+.about-interest ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.about-interest ul li {
+  list-style: none;
+  font-weight: 500;
+  margin: 10px 0;
+  color: #3f3f3f;
+}
+
+.about-interest ul li i {
+  font-size: 18px;
+  width: 20px;
+  margin-right: 10px;
+  color: #202020;
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  text-align: center;
+  max-height: 200px;
+}
+
+.footer footer {
+  width: 100%;
+  margin: auto;
+  background-color: #e7e7e7;
+  position: absolute;
+  max-height: 200px;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+  margin-top: 50px;
+}
+
+@media (max-width: 1000px) {
+  .container {
+    margin: 5px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .container .right-side {
+    padding: 10px;
+  }
+  .about {
+    margin-bottom: 20px;
+  }
+  .about .box {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+  }
+  .about .box .year-company {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .about .box .experience-text {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .about .box .experience-text h4 {
+    margin: 0;
+    padding: 0;
+  }
+  .about-interest ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
